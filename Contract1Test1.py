@@ -22,7 +22,7 @@ tile = str(input("Enter which tile you would like, selection is: Grass, Stone, S
 tile.lower
 
 if tile in Tiles:
-	while running: #this is a basic iteration
+	while True: #this is a basic iteration
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT: # this line of code determines whether the user has clicked the exit button in the top right, without this code the user wouldn't be able to close the program.
 				running = False
